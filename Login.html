@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <title>Log-In</title>
+    <style>
+        .container {
+            max-width: 500px;
+            margin: 100px;
+            padding: 20px auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            margin-left: auto;
+            margin-right: auto;
+            ;
+        }
+        
+        .container h2 {
+            text-align: center;
+        }
+        
+        .container label,
+        .container input[type="text"],
+        .container input[type="password"],
+        .container input[type="submit"] {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+        .container label {
+            font-weight: bold;
+        }
+        
+        .container input[type="text"],
+        .container input[type="password"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        
+        .container input[type="submit"] {
+            padding: 8px;
+            border: none;
+            border-radius: 3px;
+            color: #fff;
+            cursor: pointer;
+        }
+        .container a{
+            text-decoration: none;
+        }
+        .login{
+            background-color: green;
+        }
+        .signup{
+            background-color: rgb(202, 206, 211);
+            padding: 12px;
+            margin-left: 125px;
+        }
+        .signup:hover{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check" title="checkbox">
+        <label for="check" id="check-button"><i class="fa fa-bars"></i></label>
+        <a href="index.html"><label class="logo">GJ</label></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="Search.html">Search</a></li>
+            <li><a href="Login.html">Log-In</a></li>
+            <li><a href="contact.html">About Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Login Form</h2>
+        <form action="login.php" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br>
+            <input type="submit" value="Login" class="login">
+            Or
+            <a href="signup.html"><input type="button" value="Create new account" class="signup"></a>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2023 Gaming Junction Shopping Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
